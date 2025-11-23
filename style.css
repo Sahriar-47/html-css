@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: hwb(263 8% 70%);
+    padding: 20px;
+}
+
+h1 {
+    color: hsl(72, 74%, 42%);
+}
+h2 {
+    color: hsl(203, 100%, 36%);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+marquee {
+    background: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}

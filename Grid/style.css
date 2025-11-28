@@ -3,9 +3,9 @@
     grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr;
     grid-template-areas: "left1 top1 top1 top2 top2"
-                         "left1 middle1 middle2 middle2 right"
-                         "left2 middle1 middle2 middle2 right"
-                         "left2 down1 down1 down2 right";
+        "left1 middle1 middle2 middle2 right"
+        "left2 middle1 middle2 middle2 right"
+        "left2 down1 down1 down2 right";
 
     height: 100vh;
     text-align: center;
@@ -19,41 +19,49 @@
     background-color: #4CAF50;
     border: 5px solid black;
 }
+
 #left2 {
     grid-area: left2;
     background-color: #2196F3;
     border: 5px solid black;
 }
+
 #top1 {
     grid-area: top1;
     background-color: #f44336;
     border: 5px solid black;
 }
+
 #top2 {
     grid-area: top2;
     background-color: #ff9800;
     border: 5px solid black;
 }
+
 #middle1 {
     grid-area: middle1;
     background-color: #9c27b0;
     border: 5px solid black;
 }
+
 #middle2 {
     grid-area: middle2;
     background-color: #3f51b5;
     border: 5px solid black;
 }
+
 #right {
     grid-area: right;
     background-color: #00bcd4;
     border: 5px solid black;
 }
+
 #down1 {
     grid-area: down1;
     background-color: #e91e63;
     border: 5px solid black;
 }
+
 #down2 {
     grid-area: down2;
     background-color: #795548;

@@ -1,0 +1,244 @@
+/* Custom CSS for a Professional Developer Portfolio */
+
+:root {
+    --primary-color: #3f51b5; /* A strong blue for primary elements */
+    --secondary-color: #fdd835; /* A yellow/warning for accents */
+    --dark-bg: #212529; /* Dark background for professional feel */
+    --light-bg: #f8f9fa; /* Light background for contrast */
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* --- Hero Section (Header Background) --- */
+#hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/coding-bg.jpg') center center no-repeat;
+    /* NOTE: You need to replace 'images/coding-bg.jpg' with a dark, professional coding background image */
+    background-size: cover;
+    padding-top: 56px; /* Adjust for fixed navbar height */
+}
+
+#hero-section h1 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--dark-bg);
+    transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #ffc107; /* Lighter shade of yellow */
+    border-color: #ffc107;
+}
+
+/* --- Section Headings --- */
+h2.display-4 {
+    color: var(--primary-color);
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700 !important;
+}
+
+hr {
+    border-top: 5px solid var(--secondary-color);
+    opacity: 1;
+}
+
+/* --- Skills Section Badges --- */
+.badge {
+    padding: 0.5em 0.8em;
+    font-size: 0.9rem;
+    margin: 2px;
+    font-weight: 500;
+}
+
+/* --- Education Timeline --- */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #ccc;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -15px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 1rem;
+    z-index: 100;
+    transform: translateY(5px);
+}
+
+.timeline-content {
+    background: #fff;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+    width: 45%;
+    float: left;
+    text-align: right;
+    border-right: none;
+    border-left: 5px solid var(--primary-color);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+    width: 45%;
+    float: right;
+    border-right: 5px solid var(--primary-color);
+    border-left: none;
+}
+
+.timeline-item:nth-child(odd) .timeline-content p {
+    margin-left: 15px;
+}
+
+.timeline-item:nth-child(even) .timeline-content p {
+    margin-right: 15px;
+}
+
+/* Responsive adjustments for Timeline */
+@media (max-width: 992px) {
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item .timeline-icon {
+        left: 20px;
+        margin-left: -5px;
+    }
+    .timeline-item .timeline-content {
+        width: 100%;
+        float: right;
+        border-left: 5px solid var(--primary-color);
+        border-right: none !important;
+        margin-left: 40px;
+    }
+    .timeline-item .timeline-content p {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* --- Project Cards --- */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-image {
+    height: 200px;
+    object-fit: cover;
+    background-color: var(--dark-bg);
+}
+
+.card-footer {
+    padding-top: 0.5rem;
+}
+
+/* --- Contact Section --- */
+#contact .form-control {
+    background-color: #343a40; /* Darker input fields */
+    border-color: #495057;
+    color: white;
+}
+
+#contact .form-control::placeholder {
+    color: #ced4da;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-lg {
+    padding: 0.6rem 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg) !important;
+    border-top: 3px solid var(--secondary-color);
+}
+
+/* --- Profile Picture Sizing --- */
+.profile-pic {
+    /* Define fixed dimensions */
+    width: 300px; 
+    height: 300px; 
+    
+    /* Force a circular shape */
+    /* border-radius: 50% !important;  */
+    
+    /* Ensures the image covers the area without distortion */
+    object-fit: cover; 
+    
+    /* Centers the image if it's smaller than its container (optional) */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure it stacks well on smaller screens
+@media (max-width: 767px) {
+    .profile-pic {
+        width: 180px; 
+        height: 180px;
+        margin-bottom: 20px;
+    }
+} */

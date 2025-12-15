@@ -1,43 +1,496 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Sahriar Ahmad (it-22047)</title>
-     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahriar Ahmad - Java Back-End Developer Portfolio</title>
+    <link rel="stylesheet" href="Portfolio/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bungee+Spice&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 fw-bold" href="#"><span class="text-warning">S.</span>Ahmad</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Achievements
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#problem-solving">Problem Solving</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#achievements">Other Achievements</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<h1>My Simple Webpage</h1>
+        <div id="hero-section" class="d-flex align-items-center justify-content-center text-center text-white">
+            <div class="container p-5" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="display-1 fw-bold">SAHRIAR AHMAD</h1>
+                <h3 class="fw-light mb-4">ICT Student | Aspiring Software Engineer | Java & Spring Boot Specialist</h3>
+                <!-- <a href="#projects" class="btn btn-warning btn-lg me-2">View Projects <i
+                        class="bi bi-code-slash"></i></a>
+                <a href="https://github.com/Sahriar-47" target="_blank" class="btn btn-outline-light btn-lg">GitHub <i
+                        class="bi bi-github"></i></a> -->
+            </div>
+        </div>
 
-<marquee>Welcome to my simple webpage!
-   This simple webpage demonstrates my beginner-level HTML and CSS skills. It includes a scrolling marquee to show welcome messages and highlights about my projects. I integrated MathJax to render clean mathematical equations directly in the browser. The page also embeds an audio player for sound, a YouTube video using an iframe, and a PDF viewer to display documents. I focused on clean, simple design with readable fonts and spacing, using a separate CSS file to style elements. This project helped me understand linking CSS externally, embedding media, and structuring HTML for clarity and usability.
-</marquee>
-
-<h2>Math Equation</h2>
-<p>This is a simple MathJax equation:</p>
-<p> x = -b +- sqrt(b^2 - 4ac) / (2a)</p>
-
-<h2>Audio Player</h2>
-<audio controls>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
-
-<h2>YouTube Video</h2>
-<iframe width="400" height="200" 
-        src="https://www.youtube.com/embed/Cn4G2lZ_g2I" 
-        allowfullscreen>
-</iframe>
+    </header>
 
 
-<h2>PDF Viewer</h2>
-<iframe src="Sahriar's resume.pdf" width="400" height="200"></iframe>
+    <section class="home my-5 py-5 bg-light" id="home">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500">
+                Professional Summary</h1>
+            <hr class="w-25 mx-auto my-4 border-warning">
 
-<br><br>
-<p align="center">
-  About Me: <br>
-  Name: Sahriar Ahmad Tarek <br>
-  Id: it-22047 <br>
-  Department: ICT
-</p>
- <br><br><br>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/profile_pic.HEIC" class="img-fluid img-thumbnail shadow-lg profile-pic"
+                        alt="Sahriar Ahmad Profile Picture">
+                </div>
+                <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="lead mt-4 mt-md-0">Motivated Computer Science graduate with expertise in "competitive
+                        programming and back-end development". Proficient in C, Java, Spring Boot with
+                        hands-on experience MySQL, MongoDB, Redis.</p>
+                    <p>I possess strong problem-solving abilities and multilingual communication skills, seeking to
+                        leverage programming expertise and algorithmic thinking in a challenging development role as a
+                        "Junior Backend Developer" or "Software Engineer".</p>
+                    <p class="text-primary fw-bold">My primary focus is on Java, Spring Boot, and designing robust
+                        RESTful APIs.</p>
+                    <a href="#contact" class="btn btn-dark mt-3">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about my-5 py-5" id="about">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold text-primary" data-aos="zoom-in" data-aos-offset="100"
+                data-aos-duration="500">Technical Skills</h1>
+            <hr class="w-25 mx-auto my-4 border-primary">
+
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <h3 class="text-dark mb-4">Core Technology Stack</h3>
+                    <div class="accordion" id="skillsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <i class="bi bi-code-slash me-2 text-primary"></i> Languages & Frameworks
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <span class="badge bg-dark me-2 mb-1">Java</span>
+                                    <span class="badge bg-success me-2 mt-2 mb-1">Spring Boot</span><br>
+                                    <span class="badge bg-dark me-2 mb-1">C</span>
+                                    <span class="badge bg-dark me-2 mb-1">C++</span>
+                                    <span class="badge bg-dark me-2 mb-1">Python</span><br>
+                                    <span class="badge bg-dark me-2 mb-1">JavaScript</span>
+                                    <span class="badge bg-secondary me-2 mt-2 mb-1">React</span>
+                                    <span class="badge bg-secondary me-2 mt-2 mb-1">Node.js (Basic)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <i class="bi bi-database-fill me-2 text-primary"></i> Databases
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <span class="badge bg-dark me-2 mb-1">MySQL</span>
+                                    <span class="badge bg-dark me-2 mb-1">MongoDB (Basic)</span>
+                                    <span class="badge bg-dark me-2 mb-1">Redis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <i class="bi bi-tools me-2 text-primary"></i> Tools & Methodologies
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <span class="badge bg-dark me-2 mb-1">Git / GitHub</span>
+                                    <span class="badge bg-dark me-2 mb-1">IntelliJ IDEA</span>
+                                    <span class="badge bg-dark me-2 mb-1">Maven</span>
+                                    <span class="badge bg-dark me-2 mb-1">Postman</span>
+                                    <span class="badge bg-dark me-2 mb-1">JDBC / JPA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="text-dark mb-4">Soft Skills & Personal Attributes</h3>
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-3"><i class="bi bi-chat-dots-fill text-warning me-2"></i> Communication:
+                            Cross-cultural communication & Technical documentation.</li>
+                        <li class="mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i> Analytical Thinking:
+                            Problem decomposition & Logical reasoning.</li>
+                        <li class="mb-3"><i class="bi bi-compass-fill text-warning me-2"></i> Self-Learning:
+                            Continuous skill development & Adaptability.</li>
+                    </ul>
+                    <img src="images/image.png" alt="A laptop showing code"
+                        class="img-fluid img-thumbnail rounded-3 mt-4 shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about my-5 py-5 bg-light" id="education">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500">
+                Education</h1>
+            <hr class="w-25 mx-auto my-4 border-warning">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-icon bg-success"><i class="bi bi-mortarboard-fill"></i></div>
+                            <div class="timeline-content p-4 border rounded shadow-sm">
+                                <h4 class="fw-bold text-success">B.Sc. in Information and Communication Technology (ICT)
+                                </h4>
+                                <p class="text-muted mb-1">Mawlana Bhashani Science and Technology University (MBSTU),
+                                    Tangail</p>
+                                <p class="small text-secondary">2022 - 2026</p>
+                                <p class="mb-0">Currently maintaining an exceptional CGPA of 3.65+ (out of 4.00).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-icon bg-primary"><i class="bi bi-journal-bookmark-fill"></i></div>
+                            <div class="timeline-content p-4 border rounded shadow-sm">
+                                <h4 class="fw-bold text-primary">Higher Secondary School Certificate (HSC)</h4>
+                                <p class="small text-secondary">Achieved "GPA 5.00/5.00".</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-icon bg-info"><i class="bi bi-journal-bookmark-fill"></i></div>
+                            <div class="timeline-content p-4 border rounded shadow-sm">
+                                <h4 class="fw-bold text-info">Secondary School Certificate (SSC)</h4>
+                                <p class="small text-secondary">Achieved "GPA 5.00/5.00".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="my-5 py-5" id="problem-solving">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold text-primary" data-aos="zoom-in">Competitive Programming
+                Achievements</h2>
+            <hr class="w-25 mx-auto my-4 border-primary">
+            <p class="lead text-center mb-5">Demonstrated algorithmic mastery through consistent competitive programming
+                achievements on global platforms.</p>
+
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://github.com/Sahriar-47" target="_blank" class="text-decoration-none text-dark">
+                        <div class="card h-100 p-4 shadow-lg border-primary border-3 clickable-card">
+                            <i class="bi bi-arrow-bar-up display-1 text-primary"></i>
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">1000+ Problems</h3>
+                                <p class="card-text text-muted">Total problems solved across platforms like Codeforces,
+                                    LeetCode, Codechef, and AtCoder.</p>
+                                <span class="stretched-link"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="https://codeforces.com/profile/Sahriar_Ahmed" target="_blank"
+                        class="text-decoration-none text-dark">
+                        <div class="card h-100 p-4 shadow-lg border-warning border-3 clickable-card">
+                            <i class="bi bi-cup-fill display-1 text-warning"></i>
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Codeforces</h3>
+                                <p class="card-text text-muted">Over "550+ problems" solved. Click to view profile and
+                                    ratings.</p>
+                                <span class="stretched-link"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="https://leetcode.com/u/sahriar47/" target="_blank" class="text-decoration-none text-dark">
+                        <div class="card h-100 p-4 shadow-lg border-success border-3 clickable-card">
+                            <i class="bi bi-puzzle-fill display-1 text-success"></i>
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">LeetCode</h3>
+                                <p class="card-text text-muted">Over "100+ problems" solved. Click to view profile and
+                                    progress.</p>
+                                <span class="stretched-link"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about my-5 py-5 bg-light" id="projects">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500">
+                Key Projects</h1>
+            <hr class="w-25 mx-auto my-4 border-warning">
+        </div>
+
+        <div class="card-group container">
+            <div class="card shadow me-3 mb-3" data-aos="fade-up">
+                <img src="images/weather.png" class="card-img-top project-image"
+                    alt="Weather Application Placeholder Image">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Weather Application with User Authentication</h5>
+                    <p class="card-text">A comprehensive back-end application showcasing API integration and secure user
+                        management.</p>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Tech Stack: Java, Spring Boot,
+                            MySQL.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Integrated OpenWeatherMap API
+                            for real-time data.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Implemented secure user
+                            authentication (registration/login).</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Designed and optimized database
+                            schema.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sahriar-47" class="btn btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> View Project
+                </a>
+                <div class="card-footer">
+                    <small class="text-muted">Spring Boot, API Integration</small>
+                </div>
+            </div>
+
+            <div class="card shadow me-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/snake game.jpg" class="card-img-top project-image" alt="Snake Game Screenshot">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">General Programming Projects & Snake Game</h5>
+                    <p class="card-text">A collection of introductory projects and algorithms, including a Snake Game
+                        built with core programming principles.</p>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Tech Stack: C</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Focus on core language mastery and
+                            data structures.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Implements basic game logic and
+                            controls.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sahriar-47/Sahriar-s-Projects" class="btn btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+                <div class="card-footer">
+                    <small class="text-muted">Core Programming, Algorithms</small>
+                </div>
+            </div>
+
+            <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/spring boot.png" class="card-img-top project-image" alt="Spring Boot Logo">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Spring Boot Mini-Projects & Demos</h5>
+                    <p class="card-text">A repository dedicated to showcasing various features and mini-projects using
+                        the Spring Boot framework.</p>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Tech Stack: Spring Boot, Spring
+                            JPA, Spring Security,
+                            MySQL, MongoDB, Redis.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-1"></i> Demonstrates microservices
+                            architecture patterns.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sahriar-47/springboot-projects" class="btn btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+                <div class="card-footer">
+                    <small class="text-muted">REST API, Unit Testing</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about my-5 py-5 bg-dark text-white" id="contact">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold text-warning" data-aos="zoom-in" data-aos-offset="100"
+                data-aos-duration="500">Contact Me</h1>
+            <hr class="w-25 mx-auto my-4 border-warning">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-right">
+                    <h4 class="mb-4 text-warning">Contact Information</h4>
+                    <ul class="list-unstyled contact-info fs-5">
+                        <li class="mb-3"><i class="bi bi-envelope-fill text-warning me-3"></i> <a
+                                href="mailto:sahriar22047@gmail.com"
+                                class="text-white text-decoration-none">sahriar22047@gmail.com</a></li>
+                        <li class="mb-3"><i class="bi bi-telephone-fill text-warning me-3"></i> +880-1757658581</li>
+                        <li class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-3"></i> Sunamgonj, Bangladesh</li>
+                    </ul>
+
+                    <h4 class="mt-5 text-warning">Spoken Languages</h4>
+                    <p class="fs-5">Bangali (Native), English, Hindi</p>
+                </div>
+
+                <div class="col-lg-3 mb-4" data-aos="fade-up">
+                    <h4 class="mb-4 text-warning">Professional Profiles</h4>
+                    <ul class="list-unstyled contact-info fs-5">
+
+                        <li class="mb-3">
+                            <a href="YOUR_LINKEDIN_URL" target="_blank"
+                                class="text-white text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-linkedin text-info me-3 fs-4"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="https://github.com/Sahriar-47" target="_blank"
+                                class="text-white text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-github text-white me-3 fs-4"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="https://leetcode.com/u/sahriar47/" target="_blank"
+                                class="text-white text-decoration-none d-flex align-items-center">
+                                <img src="images/LeetCode_logo_black.png" alt="LeetCode" class="me-3"
+                                    style="width: 24px; height: 24px; filter: invert(1);">
+                                <span>LeetCode</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="https://codeforces.com/profile/Sahriar_Ahmed" target="_blank"
+                                class="text-white text-decoration-none d-flex align-items-center">
+                                <img src="images/codeforces-icon.png" alt="Codeforces" class="me-3"
+                                    style="width: 24px; height: 24px;">
+                                <span>Codeforces</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5" data-aos="fade-left">
+                    <h4 class="mb-4 text-warning">Send a Quick Message</h4>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control bg-secondary text-white border-dark" id="inputName"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-secondary text-white border-dark"
+                                id="inputEmail4" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control bg-secondary text-white border-dark"
+                                id="inputSubject" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputMessage" class="form-label">Message</label>
+                            <textarea class="form-control bg-secondary text-white border-dark" id="inputMessage"
+                                rows="4" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="fs-5 bg-secondary text-center text-white py-3">Developed by @Sahriar Ahmad</div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 900,
+        });
+    </script>
 </body>
+
 </html>

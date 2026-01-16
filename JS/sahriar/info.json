@@ -1,0 +1,6 @@
+[
+  { "Faculty": "ef", "dept": ["ICT", "CSE", "ME", "TE"] },
+  { "Faculty": "lf", "dept": ["CPS", "ESRM", "SWE", "EEE"] },
+  { "Faculty": "sc", "dept": ["Math", "Physics", "Chemistry", "Statistics"] },
+  { "Faculty": "as", "dept": ["Accounting", "Management", "English", "FTNS"] }
+]

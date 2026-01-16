@@ -1,0 +1,33 @@
+{
+    "name": "sahriar Ahmad",
+    "id": "it-22047",
+    "department": "Information Technology",
+    "university": "mbstu",
+    "age": "22",
+
+    "courses": [
+        {
+            "course_name": "Web Technology",
+            "course_code": "IT-401",
+            "credits": 3
+        },
+        {
+            "course_name": "Database Management System",
+            "course_code": "IT-402",
+            "credits": 3
+        }
+    ],
+
+    "friendships": [
+        {
+            "friend_name": "Rahim",
+            "friend_id": "it-22048",
+            "dist": "Dhaka"
+        },
+        {
+            "friend_name": "Karim",
+            "friend_id": "it-22049",
+            "dist": "Chittagong"
+        }
+    ]
+}

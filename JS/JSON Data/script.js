@@ -14,7 +14,7 @@ function loadDept(deptSelect) {
                     html += "<li>" + data[i].dept + "</li>";
                 }
             }
-            html += "</ul>";
+            html += " </ul>";
             document.getElementById("output").innerHTML = html;
         }
     };

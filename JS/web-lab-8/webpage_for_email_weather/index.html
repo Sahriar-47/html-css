@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email & Weather Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>API Checker Dashboard</h1>
+
+    <!-- Email Checker -->
+    <div class="box">
+        <h2>Email Reputation Checker</h2>
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="checkEmail()">Check Email</button>
+        <div class="result" id="emailResult"></div>
+    </div>
+
+    <!-- Weather Checker -->
+    <div class="box">
+        <h2>Weather Checker</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="checkWeather()">Check Weather</button>
+        <div class="result" id="weatherResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
